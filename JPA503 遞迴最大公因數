@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class trye {
+    static Scanner scn=new Scanner(System.in);
+    public static void main(String[] args) {
+        int tmp=0;//暫存
+        while(true) {
+            System.out.print("Input m:");
+            int m=scn.nextInt();
+            if (m==999) {
+                break;
+            }
+            System.out.print("Input n:");
+            int n=scn.nextInt();
+            if (n==999) {
+                break;
+            }
+            if (m%n!=0) {
+                tmp=n;
+                n=m%n;
+                m=tmp;
+            }
+            System.out.printf("最大公因數=%d\n",n);
+            
+        }
+    }
+}
