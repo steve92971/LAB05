@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class trye {
+    static Scanner scn=new Scanner(System.in);
+    public static void main(String[] args) {
+        while(true) {
+            System.out.print("Input n (0<=n<=16):");
+            int n=scn.nextInt();
+            if (n==999) {
+                break;
+            }
+            else{
+                if (n>=0 && n<=16) {
+                    System.out.printf("%d的階乘 = %d\n",n,compute(n));
+                }
+            }
+        }
+    }
+    public static int compute(int n){
+        if (n==0) {
+            return 1;
+        }
+        else{
+            return n*compute(n-1);
+        }
+    }
+}
