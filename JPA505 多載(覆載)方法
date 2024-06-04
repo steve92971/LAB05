@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class trye {
+    static Scanner scn=new Scanner(System.in);
+    public static void main(String[] args) {
+        int a1,b1;
+        System.out.print("Add two integer:");
+        a1=scn.nextInt();
+        b1=scn.nextInt();
+        Double c2,d2;
+        System.out.print("Add two ddoubles:");
+        c2=scn.nextDouble();
+        d2=scn.nextDouble();
+        String e3="I love",f3="Java!!";
+        System.out.println("Add two strings:"+e3+","+f3);
+        add(a1,b1);
+        add(c2,d2);
+        add(e3,f3);
+    }
+    public static void add(int i,int j){
+        System.out.print(i+j+" ");
+    }
+    public static void add(Double i,Double j){
+        System.out.print(i+j+" ");
+    }
+    public static void add(String i,String j){
+        System.out.print(i+" "+j);
+    }
+}
