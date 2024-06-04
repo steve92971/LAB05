@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class trye {
+    static Scanner scn=new Scanner(System.in);
+    public static void main(String[] args) {
+        
+            System.out.print("Input the number :");
+            int m=scn.nextInt();
+            System.out.printf("Ans:%d\n",sum2(m));
+            
+        
+    }
+    public static int sum2(int m){
+        int sum=0;
+        if (m==1) {
+            return 2;
+        }
+        else{
+            sum+=sum2(m-1)+2*m;
+            return sum;
+        }
+    }
+}
